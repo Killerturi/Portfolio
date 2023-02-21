@@ -1,0 +1,48 @@
+.nav_container {
+    display: flex;
+    height: 10vh;
+    justify-content: space-between;
+
+
+}
+
+.nav_left {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    gap: 2rem;
+}
+
+.nav_name {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.nav_right {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: space-between;
+    font-weight: 400;
+}
+
+.nav_list {
+    flex: 1;
+}
+
+.nav_list>ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    margin-right: 2rem;
+}
+
+.nav_list>ul>li:hover {
+    cursor: pointer;
+    color: var(--orange);
+}
+
+
+.nav_button {
+    flex: 1;
+}

@@ -1,0 +1,48 @@
+.card_conatiner {
+    width: 10rem;
+    height: 13rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    border: 7px solid var(--orangeCard);
+    box-shadow: var(--boxShadow);
+    border-radius: 25px;
+    padding: 0px 26px 2rem 26px;
+
+}
+
+.card_conatiner>:nth-child(3) {
+    color: var(--gray);
+    font-size: 15px;
+}
+
+.card_conatiner>img {
+    transform: scale(0.5);
+    margin-bottom: -2rem;
+}
+
+
+.card_button {
+    background: white;
+    color: #5290FD;
+    border: none;
+    box-shadow: 0px 19px 60px rgba(0, 0, 0, 0.08);
+    border-radius: 7px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.card_button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 480px) {
+    .card {
+        width: auto;
+    }
+}

@@ -1,0 +1,113 @@
+.Intro_container {
+    display: flex;
+    height: 77vh;
+    margin-top: 6rem;
+
+}
+
+.intro_left {
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+.intro_name {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro_name>:nth-child(1) {
+    color: var(--black);
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.intro_name>:nth-child(2) {
+    color: var(--orange);
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+
+.intro_name>:nth-child(3) {
+    color: var(--gray);
+    font-size: 16px;
+    font-weight: 100;
+    margin-top: 10px;
+}
+
+
+.intro_btn {
+    width: 6rem;
+    height: 2rem;
+}
+
+
+.intro_icons {
+    display: flex;
+
+}
+
+.intro_icons>* {
+    transform: scale(.5);
+}
+
+
+.intro_icons>*:hover {
+    cursor: pointer;
+}
+
+.intro_right {
+    flex: 1;
+    position: relative;
+}
+
+.intro_right>* {
+    position: absolute;
+    z-index: 1;
+}
+
+
+.intro_right>:nth-child(1) {
+    transform: scale(.68);
+    left: -15%;
+    top: -10%;
+}
+
+.intro_right>:nth-child(2) {
+    transform: scale(.69);
+    top: -4.8rem;
+    left: -4rem;
+
+}
+
+.intro_right>:nth-child(3) {
+    transform: scale(.9);
+    left: 12%;
+    top: -25%;
+}
+
+.intro_right>:nth-child(4) {
+    transform: scale(.6);
+    top: -19%;
+    left: -24%;
+    border-radius: 50%;
+    padding: 0;
+}
+
+
+.blur {
+    position: absolute;
+    width: 22rem;
+    height: 14rem;
+    border-radius: 50%;
+    background: #edd0ff;
+    filter: blur(52px);
+    z-index: -9;
+    top: -10%;
+    left: 56%;
+
+}
