@@ -6,6 +6,7 @@ import Glasses from "../../img/glasses.png";
 import Humbel from "../../img/humble.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
+import CV from "./cv.pdf";
 
 const Services = () => {
   const transition = { duration: 1, type: "spring" };
@@ -23,7 +24,9 @@ const Services = () => {
             <br />
             similique illo ullam architecto impedit maxime. Ipsa vitae harum
           </span>
-          <button className="button services_btn">Download CV</button>
+          <a href={CV} target="_blank">
+            <button className="button services_btn">Download CV</button>
+          </a>
           <div
             className="blur services_blur1"
             style={{ background: "#ABF1FF94" }}
