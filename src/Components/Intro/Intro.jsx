@@ -27,10 +27,11 @@ const Intro = () => {
             <span style={{ color: darkMode ? "white" : "" }}>Hi, I Am</span>
             <span>Ajoy Turi</span>
             <span>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
-              sapiente vitae neque nulla commodi porro est possimus fugiat
-              ducimus! Voluptas tenetur minima quod, voluptatibus, doloremque
-              esse rem unde nostrum accusamus fuga sunt.
+              Innovative front end developer . Proficient in HTML,CSS
+              ,Javascript using a modern library such as React.Love bringing
+              designs to life and create beautiful,usable,expreiences for all
+              users.I have good interpersonal skills to build good working
+              relatioships.
             </span>
           </div>
           <button className="button intro_btn">
