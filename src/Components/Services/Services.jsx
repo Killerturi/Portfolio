@@ -39,7 +39,11 @@ const Services = () => {
             transition={transition}
             style={{ left: "14rem" }}
           >
-            <Card emoji={HeartEmoji} heading={"Design"} details={"lorem"} />
+            <Card
+              emoji={HeartEmoji}
+              heading={"Design"}
+              details={"Lorem ipsum, dolor sit am."}
+            />
           </motion.div>
           <motion.div
             initial={{ left: "-20rem" }}
@@ -62,7 +66,7 @@ const Services = () => {
             <Card
               emoji={Humbel}
               heading={"Backend"}
-              details={"Nodejs,Express,MongoDb"}
+              details={"Firebase, learning Node js"}
             />
           </motion.div>
           <div

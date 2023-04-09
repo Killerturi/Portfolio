@@ -111,3 +111,54 @@
     left: 56%;
 
 }
+
+
+@media screen and (max-width: 480px) {
+    .Intro_container {
+        flex-direction: column;
+        gap: 7rem;
+        height: 64rem;
+    }
+
+    .intro_right {
+        transform: scale(0.8);
+        left: -3rem;
+    }
+
+    .blur {
+        display: none;
+    }
+
+    .floating_div {
+        top: -7rem !important;
+        left: -18% !important;
+    }
+
+    .floating_div_1 {
+        top: -7rem !important;
+        left: 78% !important;
+    }
+
+    .floating_div_2 {
+        left: 10% !important;
+    }
+
+    .intro_btn {
+        width: 7rem;
+        height: 2rem;
+    }
+
+    .intro_right>:nth-child(1) {
+        transform: scale(.68);
+        left: -32%;
+        top: -10%;
+    }
+
+    .intro_right>:nth-child(2) {
+        transform: scale(.69);
+        top: -4.8rem;
+        left: -6rem;
+
+    }
+
+}

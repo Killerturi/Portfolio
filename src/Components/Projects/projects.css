@@ -51,9 +51,33 @@
     color: var(--orange);
 }
 
+
+
 .project_card :hover {
-    transition: ease-in(.5s);
-    transform: scale(1.1);
-    margin-bottom: 1rem;
+
     box-shadow: var(--boxShadow);
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .next_btn {
+        display: flex;
+        justify-content: flex-end;
+        /* border: 1px solid red; */
+        padding-left: 71%;
+        margin-top: 10px;
+    }
+
+    .project_details {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .project_details * span {
+        font-size: small;
+    }
+
+
 }

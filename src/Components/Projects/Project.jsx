@@ -1,6 +1,8 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./projects.css";
 import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css/navigation";
+import "swiper/css/autoplay";
 import "swiper/css";
 import Codepen from "../../img/codepen.jpg";
 import Movie from "../../img/Movie.jpg";
@@ -9,10 +11,22 @@ import Crud from "../../img/crud.jpg";
 import BookStore from "../../img/bookstore.jpg";
 import Youtube from "../../img/youtube.jpg";
 import { themeContext } from "../../Context";
+import { Autoplay, Navigation } from "swiper";
 
 const Project = () => {
+  const [dimensions, setDimensions] = useState({
+    width: window.innerWidth,
+  });
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
+  useEffect(() => {
+    function handleResize() {
+      setDimensions({
+        width: window.innerWidth,
+      });
+    }
+    window.addEventListener("resize", handleResize);
+  });
   return (
     <>
       <div className="project_container" id="Project">
@@ -21,9 +35,12 @@ const Project = () => {
         </span>
         <Swiper
           spaceBetween={30}
-          slidesPerView={3}
+          slidesPerView={dimensions.width > 480 ? 3 : 1}
           grabCursor={true}
           className="project_container-slider"
+          modules={[Autoplay, Navigation]}
+          navigation
+          autoplay={{ delay: 4000 }}
         >
           <SwiperSlide>
             <div className="project_card">

@@ -9,6 +9,7 @@
 .nav_left {
     display: flex;
     align-items: center;
+    justify-content: left;
     flex: 1;
     gap: 2rem;
 }
@@ -22,7 +23,7 @@
     display: flex;
     align-items: center;
     flex: 1;
-    justify-content: space-between;
+    justify-content: flex-end;
     font-weight: 400;
 }
 
@@ -45,4 +46,18 @@
 
 .nav_button {
     flex: 1;
+}
+
+@media screen and (max-width: 480px) {
+    .nav_list {
+        display: none;
+    }
+
+    .nav_left {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex: 1;
+        gap: 2rem;
+    }
 }

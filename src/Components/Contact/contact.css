@@ -57,3 +57,17 @@ textarea {
 .contact_btn {
     width: 8rem;
 }
+
+@media screen and (max-width: 480px) {
+    .contact_container {
+        padding: 0;
+        flex-direction: column;
+        gap: 5rem;
+        height: 40rem;
+    }
+
+    .contact_right .user {
+        width: 16rem;
+    }
+
+}

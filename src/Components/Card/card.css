@@ -42,7 +42,7 @@
 
 
 @media screen and (max-width: 480px) {
-    .card {
+    .card_conatiner {
         width: auto;
     }
 }
