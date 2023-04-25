@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
 import "swiper/css";
+import Ecommerce from "../../img/ecommerce.png";
 import Codepen from "../../img/codepen.jpg";
 import Movie from "../../img/Movie.jpg";
 import Quiz from "../../img/quiz.jpg";
@@ -17,8 +18,10 @@ const Project = () => {
   const [dimensions, setDimensions] = useState({
     width: window.innerWidth,
   });
+
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
+
   useEffect(() => {
     function handleResize() {
       setDimensions({
@@ -27,6 +30,7 @@ const Project = () => {
     }
     window.addEventListener("resize", handleResize);
   });
+
   return (
     <>
       <div className="project_container" id="Project">
@@ -44,12 +48,14 @@ const Project = () => {
         >
           <SwiperSlide>
             <div className="project_card">
-              <img src={BookStore} alt="image" />
+              <a href="https://aj-shops.netlify.app/" target="_blank">
+                <img src={Ecommerce} alt="image" />
+              </a>
             </div>
             <div className="project_details">
               <span>
                 Project Name:
-                <span className="Project_heading"> Book Store</span>
+                <span className="Project_heading">Ecommerce</span>
               </span>
               <a
                 href="https://github.com/Killerturi/book-store.git"
@@ -61,6 +67,7 @@ const Project = () => {
               </a>
             </div>
           </SwiperSlide>
+
           <SwiperSlide>
             <div className="project_card">
               <img src={Movie} alt="image" />
@@ -148,6 +155,25 @@ const Project = () => {
               </span>
               <a
                 href="https://github.com/Killerturi/crud-app.git"
+                target="_blank"
+              >
+                <span style={{ color: darkMode ? "white" : "" }}>
+                  source code
+                </span>
+              </a>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="project_card">
+              <img src={BookStore} alt="image" />
+            </div>
+            <div className="project_details">
+              <span>
+                Project Name:
+                <span className="Project_heading"> Book Store</span>
+              </span>
+              <a
+                href="https://github.com/Killerturi/book-store.git"
                 target="_blank"
               >
                 <span style={{ color: darkMode ? "white" : "" }}>
