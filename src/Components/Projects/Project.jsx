@@ -16,21 +16,8 @@ import { themeContext } from "../../Context";
 import { Autoplay, Navigation } from "swiper";
 
 const Project = () => {
-  const [dimensions, setDimensions] = useState({
-    width: window.innerWidth,
-  });
-
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
-
-  useEffect(() => {
-    function handleResize() {
-      setDimensions({
-        width: window.innerWidth,
-      });
-    }
-    window.addEventListener("resize", handleResize);
-  });
 
   return (
     <>

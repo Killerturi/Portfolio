@@ -68,13 +68,14 @@
         gap: 5rem;
         height: 66rem;
         padding: 0;
+        margin-bottom: 300px
     }
 
     .services_right {
         display: flex;
         flex-direction: column;
         gap: 17rem;
-        padding-left: 17%;
+        padding-left: 15%;
     }
 
     .services_right>* {
