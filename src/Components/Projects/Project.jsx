@@ -58,7 +58,7 @@ const Project = () => {
                 <span className="Project_heading">Ecommerce</span>
               </span>
               <a
-                href="https://github.com/Killerturi/book-store.git"
+                href="https://github.com/Killerturi/Ecommerce/tree/main/e-commerce"
                 target="_blank"
               >
                 <span style={{ color: darkMode ? "white" : "" }}>
