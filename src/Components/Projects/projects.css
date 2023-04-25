@@ -9,7 +9,6 @@
 .project_container>span {
     color: var(--black);
     font-size: 1.5rem;
-    margin-bottom: 1rem;
 }
 
 .text {
@@ -25,6 +24,7 @@
 .project_container-slider {
     margin-top: 3rem;
     width: 100%;
+
 }
 
 .project_container-slider .swiper-slide {
@@ -53,6 +53,7 @@
 
 
 
+
 .project_card :hover {
 
     box-shadow: var(--boxShadow);
@@ -60,6 +61,10 @@
 
 
 @media screen and (max-width: 480px) {
+
+    .project_container>span {
+        margin-top: 150px;
+    }
 
     .next_btn {
         display: flex;

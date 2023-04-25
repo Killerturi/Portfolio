@@ -39,13 +39,33 @@ const Project = () => {
           Recent<span className="text">Projects</span>
         </span>
         <Swiper
-          spaceBetween={30}
-          slidesPerView={dimensions.width > 480 ? 3 : 1}
           grabCursor={true}
           className="project_container-slider"
           modules={[Autoplay, Navigation]}
           navigation
           autoplay={{ delay: 4000 }}
+          breakpoints={{
+            0: {
+              slidesPerView: 1,
+              spaceBetween: 40,
+            },
+            480: {
+              slidesPerView: 1,
+              spaceBetween: 40,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 25,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 15,
+            },
+            1280: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+          }}
         >
           <SwiperSlide>
             <div className="project_card">
@@ -77,10 +97,7 @@ const Project = () => {
                 Project Name:
                 <span className="Project_heading"> Cart App</span>
               </span>
-              <a
-                href="https://github.com/Killerturi/cart"
-                target="_blank"
-              >
+              <a href="https://github.com/Killerturi/cart" target="_blank">
                 <span style={{ color: darkMode ? "white" : "" }}>
                   source code
                 </span>
