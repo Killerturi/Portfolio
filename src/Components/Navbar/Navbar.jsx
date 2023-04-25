@@ -7,7 +7,7 @@ const Navbar = () => {
     <>
       <div className="nav_container" id="Navbar">
         <div className="nav_left">
-          <div className="nav_name">Ajoy</div>
+          <div className="nav_name">Aj</div>
           <Toggle />
         </div>
         <div className="nav_right">

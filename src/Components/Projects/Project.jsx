@@ -34,11 +34,11 @@ const Project = () => {
           breakpoints={{
             0: {
               slidesPerView: 1,
-              spaceBetween: 40,
+              spaceBetween: 50,
             },
             480: {
               slidesPerView: 1,
-              spaceBetween: 40,
+              spaceBetween: 50,
             },
             768: {
               slidesPerView: 2,
