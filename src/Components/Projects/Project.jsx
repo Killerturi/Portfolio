@@ -5,6 +5,7 @@ import "swiper/css/navigation";
 import "swiper/css/autoplay";
 import "swiper/css";
 import Ecommerce from "../../img/ecommerce.png";
+import Cart from "../../img/cart.png";
 import Codepen from "../../img/codepen.jpg";
 import Movie from "../../img/Movie.jpg";
 import Quiz from "../../img/quiz.jpg";
@@ -67,7 +68,25 @@ const Project = () => {
               </a>
             </div>
           </SwiperSlide>
-
+          <SwiperSlide>
+            <div className="project_card">
+              <img src={Cart} alt="image" />
+            </div>
+            <div className="project_details">
+              <span>
+                Project Name:
+                <span className="Project_heading"> Cart App</span>
+              </span>
+              <a
+                href="https://github.com/Killerturi/cart"
+                target="_blank"
+              >
+                <span style={{ color: darkMode ? "white" : "" }}>
+                  source code
+                </span>
+              </a>
+            </div>
+          </SwiperSlide>
           <SwiperSlide>
             <div className="project_card">
               <img src={Movie} alt="image" />
